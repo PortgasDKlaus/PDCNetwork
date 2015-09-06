@@ -1,30 +1,24 @@
 //
-//  ViewController.m
+//  TwoVC.m
 //  PDCNetwork
 //
 //  Created by portgasdcrow on 15/9/6.
 //  Copyright (c) 2015年 PDC. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TwoVC.h"
 
-#import "OneVC.h"
-
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
+@implementation TwoVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    self.title = @"ViewController";
+    self.title = @"TwoVC";
 
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(40, k_ScreenH/2 - 20, k_ScreenW - 80, 40)];
     btn.backgroundColor = k_Color_BtnBG;
-    [btn setTitle:@"Next" forState:UIControlStateNormal];
+    [btn setTitle:@"NextToEnd" forState:UIControlStateNormal];
     [btn setTitleColor:k_Color_BtnText forState:UIControlStateNormal];
     [btn setTitleColor:k_Color_BtnTextH forState:UIControlStateHighlighted];
 
@@ -37,13 +31,8 @@
 }
 
 - (void)nextPress{
-    OneVC *vc = [[OneVC alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
+    // do PDC networking.
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TwoVC.h
 //  PDCNetwork
 //
 //  Created by portgasdcrow on 15/9/6.
@@ -8,8 +8,6 @@
 
 #import "BaseVC.h"
 
-@interface ViewController : BaseVC
-
+@interface TwoVC : BaseVC
 
 @end
-
